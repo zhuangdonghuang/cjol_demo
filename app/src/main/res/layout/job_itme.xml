@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="120dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#32e4e4e4"/>
+
+    <RelativeLayout
+        android:paddingTop="10dp"
+        android:id="@+id/home_joblist1"
+        android:layout_width="wrap_content"
+        android:layout_height="92dp">
+
+
+
+        <TextView
+            android:id="@+id/home_joblist_job_name"
+            android:layout_width="129dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageview1"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/imageview1"
+            android:text="产品经理"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/home_joblist_job_infor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/home_joblist_job_name"
+            android:layout_alignStart="@+id/home_joblist_job_name"
+            android:layout_below="@+id/home_joblist_job_name"
+            android:text="深圳市-南山区 1-3年 本科"
+            android:textSize="10dp"/>
+
+        <TextView
+            android:id="@+id/home_joblist_salary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/home_joblist_time"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/home_joblist_time"
+            android:text="6k-8k"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/home_joblist_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/home_joblist_job_infor"
+            android:layout_alignBottom="@+id/home_joblist_job_infor"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="304dp"
+            android:layout_marginStart="304dp"
+            android:text="一分钟前"
+            android:textSize="10dp"/>
+
+        <ImageView
+            android:id="@+id/imageview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/home_joblist_companyname"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
+            android:scaleType="center"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/home_joblist_companyname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/home_joblist_companyinformation"
+            android:layout_toEndOf="@+id/imageview1"
+            android:layout_toRightOf="@+id/imageview1"
+            android:text="深圳市希捷尔人力资源有限公司"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/home_joblist_companyinformation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/imageview1"
+            android:layout_toRightOf="@+id/imageview1"
+            android:text="互联网/电子商务/网游    50-150人"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/home_joblist_more"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="..."
+            android:textSize="25dp"
+            android:background="@android:color/transparent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/home_joblist_time"
+            android:layout_alignStart="@+id/home_joblist_time" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+
+
+    <ImageView
+        android:id="@+id/adapter_sociality_list_icon_tv"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+
+
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/adapter_sociality_list_icon_tv"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/adapter_sociality_list_name_tv"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="小米" />
+
+
+        <TextView
+            android:id="@+id/adapter_sociality_list_content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="价钱"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/adapter_sociality_list_prio_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="剩余"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/adapter_sociality_list_down_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/selector_sociality_btn_btn"
+        android:text="兑换"
+        android:textColor="@drawable/selector_my_textcolor_btn" />
+
+
+</RelativeLayout>

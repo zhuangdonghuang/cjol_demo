@@ -1,0 +1,58 @@
+<resources>
+
+    <!-- 主页面的RadioButton样式-->
+    <style name="home_radio_btn_style">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="main_menu_radio">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <!-- 更新对话框的样式-->
+    <style name="dialog_version" parent="android:Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!-- listview的标题样式-->
+    <style name="list_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <!-- listview的标题样式-->
+    <style name="list_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:animationDuration">5000</item>
+
+    </style>
+
+    <style name="AppBaseTheme" parent="android:style/Theme.Light.NoTitleBar">
+        <!-- API 11 theme customizations can go here. -->
+    </style>
+
+
+
+</resources>

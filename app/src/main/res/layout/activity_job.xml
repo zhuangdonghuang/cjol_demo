@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.home.john.mybasket.modules.home.activity.JobActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#67bfbfbf"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:background="#ffffff">
+
+            <TextView
+                android:id="@+id/job_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="职位详情"
+                android:textSize="20sp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#309c9c9c"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="384dp"
+            android:layout_height="61dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:text="职位名称"
+                android:textSize="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/textView3"
+                android:layout_alignStart="@+id/textView3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="深圳市-南山区 1-3年 本科"
+                android:textSize="10dp"
+                android:id="@+id/textView3"
+                android:layout_marginLeft="17dp"
+                android:layout_marginStart="17dp"
+                android:layout_below="@+id/textView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6k-12k"
+                android:textSize="20dp"
+                android:layout_alignBaseline="@+id/textView"
+                android:layout_alignBottom="@+id/textView"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="27dp"
+                android:layout_marginEnd="27dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/imageview1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_above="@+id/textView2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:scaleType="center"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/jobActivity_companyname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/job_companyinformation"
+                android:layout_alignEnd="@+id/job_location"
+                android:layout_alignRight="@+id/job_location"
+                android:layout_toRightOf="@+id/imageview1"
+                android:text="深圳市希捷尔人力资源有限公司"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/job_companyinformation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/jobActivity_companyname"
+                android:layout_alignRight="@+id/jobActivity_companyname"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageview1"
+                android:text="互联网/电子商务/网游    50-150人"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/job_companyinformation"
+                android:layout_marginTop="10dp"
+                android:background="#58616161" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignLeft="@+id/imageview1"
+                android:layout_alignStart="@+id/imageview1"
+                android:layout_below="@+id/textView2"
+                android:src="@drawable/location" />
+            <ImageView
+                android:id="@+id/imageViewgo"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/go"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_alignTop="@+id/jobActivity_companyname"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/job_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_toEndOf="@+id/imageView"
+                android:layout_toRightOf="@+id/imageView"
+                android:text="工作地点：深圳市南山区科技园生态园" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="239dp">
+
+        <TextView
+            android:id="@+id/job_text_title"
+            android:layout_marginTop="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="职位描述"
+            android:textSize="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="岗位描述：
+
+1. 负责产品功能策划、原型设计、需求文档输出；
+
+2. 协调开发资源，推动产品的设计与开发，力求产品成品与设计相符；
+
+3. 支持并参与产品运营，协助运营人员更好的呈现产品，并获得必要的用户反馈信息，对产品进行优化迭代；
+
+4. 不断收集反馈产品用户及需求的相关信息，为产品研究提供分析素材。
+
+
+
+职位要求：
+
+1. 大学本科学历，专业不限。2年左右的产品策划经验，有主导产品核心功能策划，或承担完整产品策划经验者尤佳；
+
+2. 熟练使用Axure、Sketch、PS、xmind等产品设计常用工具软件；有良好的文字表达能力，可高效的完成产品需求文档；
+
+3. 极强的好奇心，思路开阔，喜欢体验、分析各种有趣的互联网产品；
+
+4. 喜欢思考，逻辑思维能力较好，有一定能力进行用户分析，挖据用户需求；
+
+5. 乐观坚韧，可以承受较大的工作压力，面对产品困难不轻言放弃；
+
+6. 富有团队精神和敬业精神，能和小伙伴一起携手完成艰难任务；
+
+7. 特别耐心细致，对产品细节、交互体验、UI视觉等有执念。"
+            android:textSize="12dp"
+            android:layout_below="@+id/job_text_title"
+            android:layout_marginTop="14dp"
+            android:layout_alignLeft="@+id/job_text_title"
+            android:layout_alignStart="@+id/job_text_title" />
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/zhiweituijian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:text="职位推荐"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/zhiweituijian"
+                android:background="#30797979" />
+
+            //1
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView5"
+                android:id="@+id/relativeLayout2">
+
+                <TextView
+                    android:id="@+id/joblist_job_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="10dp"
+                    android:text="产品经理"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/joblist_companyname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/joblist_job_name"
+                    android:layout_alignStart="@+id/joblist_job_name"
+                    android:layout_below="@+id/joblist_salary"
+                    android:text="深圳市希捷尔人力资源有限公司"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/joblist_salary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/joblist_job_name"
+                    android:layout_marginEnd="17dp"
+                    android:layout_marginRight="17dp"
+                    android:text="6k-8k"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/joblist_job_infor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/joblist_companyname"
+                    android:layout_alignStart="@+id/joblist_companyname"
+                    android:layout_below="@+id/joblist_companyname"
+                    android:text="深圳市-南山区 1-3年 本科"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/joblist_job_infor"
+                    android:background="#309c9c9c" />
+            </RelativeLayout>
+            //2
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:id="@+id/joblist_job_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="10dp"
+                    android:text="产品经理"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/joblist_companyname2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/joblist_job_name2"
+                    android:layout_alignStart="@+id/joblist_job_name2"
+                    android:layout_below="@+id/joblist_salary2"
+                    android:text="深圳市希捷尔人力资源有限公司"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/joblist_salary2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/joblist_job_name2"
+                    android:layout_marginEnd="17dp"
+                    android:layout_marginRight="17dp"
+                    android:text="6k-8k"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/joblist_job_infor2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/joblist_companyname2"
+                    android:layout_alignStart="@+id/joblist_companyname2"
+                    android:layout_below="@+id/joblist_companyname2"
+                    android:text="深圳市-南山区 1-3年 本科"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/joblist_job_infor2"
+                    android:background="#309c9c9c" />
+            </RelativeLayout>
+
+            //3
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:id="@+id/joblist_job_name3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="10dp"
+                    android:text="产品经理"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/joblist_companyname3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/joblist_job_name3"
+                    android:layout_alignStart="@+id/joblist_job_name3"
+                    android:layout_below="@+id/joblist_salary3"
+                    android:text="深圳市希捷尔人力资源有限公司"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/joblist_salary3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/joblist_job_name3"
+                    android:layout_marginEnd="17dp"
+                    android:layout_marginRight="17dp"
+                    android:text="6k-8k"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/joblist_job_infor3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/joblist_companyname3"
+                    android:layout_alignStart="@+id/joblist_companyname3"
+                    android:layout_below="@+id/joblist_companyname3"
+                    android:text="深圳市-南山区 1-3年 本科"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/joblist_job_infor3"
+                    android:background="#309c9c9c" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/bottom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:text="收藏"></Button>
+
+                <Button
+                    android:layout_width="208dp"
+                    android:layout_height="50dp"
+                    android:text="投递"></Button>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+    </ScrollView>

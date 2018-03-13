@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@android:color/white">
+
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="28dp"
+        android:id="@+id/editText"
+        android:textColorHint="#c0c0c0"
+        android:background="@drawable/shape_home_search"
+        android:hint="搜索职位/公司"
+        android:textColor="#c0c0c0"
+        android:paddingLeft="30dp"
+        android:textSize="10sp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/but_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_style"
+        android:text="求职意向"
+        android:layout_marginLeft="10dp"
+        android:layout_alignBottom="@+id/editText"
+        android:layout_alignTop="@+id/editText"
+        android:textSize="10dp"
+        android:textColor="@android:color/darker_gray"/>
+
+
+    <!--滑动按钮-->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/home_tl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:tabIndicatorColor="#ffde3b"
+        app:tabTextColor="@android:color/darker_gray"
+        app:tabSelectedTextColor="#ffde3b"
+        android:layout_below="@+id/but_top"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/home_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/home_tl">
+    </android.support.v4.view.ViewPager>
+
+
+
+</RelativeLayout>

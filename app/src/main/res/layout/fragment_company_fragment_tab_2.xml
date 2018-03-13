@@ -1,0 +1,144 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.home.john.mybasket.modules.home.fragment.subFragment.CompanyFragmentTab_2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F8F8FF"
+        android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F8F8FF"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_hand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/main_tv_show"
+            android:layout_toRightOf="@+id/main_tv_show"
+            android:text="公司介绍"
+            android:padding="10dp"
+            android:textColor="#454545"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/main_tv_hidden"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:lineSpacingMultiplier="1.2"
+            android:layout_below="@+id/main_tv_show"
+            android:padding="10dp"
+            android:background="#ffffff"
+            android:lines="3"
+            android:text="@string/company_information"
+ />
+
+
+        <TextView
+            android:id="@+id/main_tv_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#ffffff"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="10dp"
+            android:text="@string/company_information"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/main_tv_click"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_tv_hidden"
+            android:lineSpacingMultiplier="1.2"
+            android:layout_centerHorizontal="true"
+            android:background="#ffffff"
+            android:gravity="bottom"
+            android:onClick="onClick"
+            android:paddingLeft="10dp"
+            android:text="展开"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_fuli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/main_tv_click"
+            android:padding="10dp"
+            android:text="公司福利"
+            android:textColor="#454545"
+            android:textSize="20dp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+            android:id="@+id/fuli_btn1"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+            android:background="@drawable/btn_style"
+            android:text="五险一金"
+            android:layout_marginLeft="10dp"
+            android:textSize="10dp"
+            android:textColor="@android:color/darker_gray" />
+
+            <Button
+                android:id="@+id/fuli_btn2"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_style"
+                android:text="加班补贴"
+                android:layout_marginLeft="10dp"
+                android:textSize="10dp"
+                android:textColor="@android:color/darker_gray" />
+
+            <Button
+                android:id="@+id/fuli_btn3"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_style"
+                android:text="定期旅游"
+                android:layout_marginLeft="10dp"
+                android:textSize="10dp"
+                android:textColor="@android:color/darker_gray" />
+
+            <Button
+                android:id="@+id/fuli_btn4"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_style"
+                android:text="年终奖金"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="10dp"
+                android:textColor="@android:color/darker_gray" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

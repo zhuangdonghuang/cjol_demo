@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--滑动按钮-->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/conmpany_tl_tab"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:tabIndicatorColor="#000000"
+        app:tabSelectedTextColor="#000000"
+        app:tabTextColor="@android:color/darker_gray"
+        android:layout_above="@+id/company_vp_tab"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/company_vp_tab"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_weight="2.35"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"></android.support.v4.view.ViewPager>
+
+
+</RelativeLayout>
